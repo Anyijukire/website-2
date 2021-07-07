@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <div>
+    <form action="submit">
+    <p><input type="text" class="name1" value="">First name</p>
+    <p> <input type="text" class="name2" value="">Second name</p>
+    <p> <input type="text" value="">Email</p>
+   <p><label for="feed_back">
+   <input type="text" class="comment" value="">Leave a comment... </label> 
+   </p>
+   <button type="submit">Submit</button>
+
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   
+<script>
+  var form = document.querySelector("form");
+  console.log(form.elements[0].type);	
+  console.log(form.elements.password.type);
+  console.log(form.elements.name.form == form);
+  var textarea=document.querySelector("textarea");
+  textarea.addEventListener("keydown",function(event){
+    if(event.keydown==113){
+      replaceSelection(textarea, "knasjskj");
+      event.preventDefault();
+    }
+  })
+ 
+</script>
+
+   </script>
+  </body>
+</html>
